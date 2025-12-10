@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Yash Jagdishchandra Soni</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="page-overlay" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand"><span>YS</span> Yash Soni</div>
+
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="certificates.html" class="nav-link">Certificates</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+        <a href="resume.pdf" class="btn btn-ghost" download>Download Resume</a>
+      </nav>
+
+      <button class="nav-toggle" aria-label="toggle navigation" onclick="toggleNav()">☰</button>
+    </div>
+  </header>
+
+  <main class="container section">
+    <h1 class="section-title reveal-up">Contact Me</h1>
+    <p class="muted reveal-fade delay-1">Want to collaborate or discuss a project? Send a message below — or reach out via email/LinkedIn.</p>
+
+    <div class="contact-grid">
+      <div class="contact-card reveal-up delay-2">
+        <h4>Email</h4>
+        <p>yashsoni7624@gmail.com</p>
+      </div>
+
+      <div class="contact-card reveal-up delay-2-2">
+        <h4>Location</h4>
+        <p>Surat, Gujarat, India</p>
+      </div>
+
+      <div class="contact-card reveal-up delay-2-4">
+        <h4>Phone</h4>
+        <p>+91 73839 20612</p>
+      </div>
+
+      <div class="contact-card reveal-up delay-2-6">
+        <h4>Social</h4>
+        <p>
+          <a href="https://www.linkedin.com/in/yash-soni-a537b4239/" target="_blank">LinkedIn</a> ·
+          <a href="https://github.com/yashsoni22" target="_blank">GitHub</a>
+        </p>
+      </div>
+    </div>
+<form class="contact-form reveal-fade delay-3"
+      action="https://formspree.io/f/xpwvyyag"
+      method="POST"
+      id="contactForm">
+
+  <input type="text" name="name" placeholder="Your Name" required />
+  <input type="email" name="email" placeholder="Your Email" required />
+  <textarea name="message" rows="6" placeholder="Message" required></textarea>
+
+  <div class="center">
+    <button class="btn btn-primary btn-magnetic" type="submit">Send Message</button>
+  </div>
+</form>
+
+<!-- Toast Notification -->
+<div id="toast" class="toast">Message sent successfully!</div>
+
+<!-- Success Modal -->
+<div id="successModal" class="modal">
+  <div class="modal-content reveal-zoom">
+    <h2>✨ Message Sent!</h2>
+    <p>Thanks for reaching out. I’ll get back to you soon.</p>
+    <button class="btn btn-primary btn-magnetic" id="closeModal">Okay</button>
+  </div>
+</div>
+
+<!-- Slide-in Panel -->
+<div id="slidePanel" class="slide-panel">
+  <p>Your message was sent successfully!</p>
+</div>
+
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year6"></span> Yash Jagdishchandra Soni</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

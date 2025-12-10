@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yash Soni — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- PAGE TRANSITION OVERLAY -->
+  <div id="page-overlay" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand"><span>YS</span> Yash Soni</div>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="certificates.html" class="nav-link">Certificates</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="resume.pdf" class="btn btn-ghost" download>Download Resume</a>
+      </nav>
+      <button class="nav-toggle" aria-label="toggle navigation" onclick="toggleNav()">☰</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section class="hero container">
+      <div class="hero-left">
+        <div class="profile-frame parallax" data-speed="0.15">
+         <div class="frame-ring ring-1 rotate-slower"></div>
+         <div class="frame-ring ring-2 rotate-slow"></div>
+
+          <img src="yash.jpg" alt="Yash Soni" class="profile-photo reveal-right neon-glow" />
+
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <h1 class="hero-title reveal-up">Hi, I’m <span class="accent">Yash Soni</span></h1>
+        <p class="lead reveal-up delay-1">Turning ideas into functional digital experiences — Full Stack Developer & AI enthusiast.</p>
+        <p class="lead reveal-fade delay-1">Flutter · Java · PHP · AI · Web</p>
+
+        <div class="badges reveal-fade delay-2">
+          <span>JAVA</span>
+          <span>PHP</span>
+          <span>FLUTTER</span>
+          <span>C#</span>
+          <span>SQL</span>
+          <span>ORACLE APEX</span>
+          <span>Frontend</span>
+          <span>Problem Solving</span>
+        </div>
+
+        <div class="info-row">
+          <div class="info-card reveal-up delay-3">
+            <h4>📍 Location</h4>
+            <p>Surat, Gujarat, India</p>
+          </div>
+
+          <div class="info-card reveal-up delay-3-2">
+            <h4>💼 Expertise</h4>
+            <p>Flutter · Java · App Dev</p>
+          </div>
+
+          <div class="info-card reveal-up delay-3-4">
+            <h4>✉️ Contact</h4>
+            <p>yashsoni7624@gmail.com</p>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-magnetic" href="projects.html">See Projects</a>
+          <a class="btn btn-ghost btn-magnetic" href="contact.html">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Preview Section -->
+    <section class="container quick-projects">
+      <h2 class="section-title reveal-up">Selected Projects</h2>
+      <div class="project-grid">
+        <article class="project-card reveal-up delay-1">
+          <div class="proj-tag">AI - Web</div>
+          <h3>People’s Care</h3>
+          <p>AI-driven healthcare platform providing health insights and recommendations via a simple interface.</p>
+        </article>
+
+       <article class="project-card reveal-up delay-1-2">
+          <div class="proj-tag">Web</div>
+          <h3>Blood Bank Management System</h3>
+          <p>Web-based system for managing blood donations, requests, and inventory efficiently.</p>
+        </article>
+
+        <article class="project-card reveal-up delay-1-4">
+          <div class="proj-tag">App</div>
+          <h3>MY Space Project</h3>
+          <p>Platform with Desk On Rent and Freelancing modules to book workspaces and connect freelancers with projects.</p>
+        </article>
+      </div>
+      <div class="center"><a class="btn btn-primary btn-magnetic reveal-fade delay-2" href="projects.html">All Projects</a></div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Yash Soni — Built with HTML & CSS • <a href="index.html">Home</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
